@@ -48,8 +48,8 @@
                                 <div class="invalid-feedback p-0">{{$message}}</div>
                             @enderror
                         </div>
-                        <div class="btn btn-success row mb-3 mx-3">
-                                <button type="submit">Submit</button>
+                        <div class="col-6">
+                                <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                         
                 </form>

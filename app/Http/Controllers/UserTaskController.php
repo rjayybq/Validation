@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\UserTask;
+use Illuminate\Foundation\Auth\User;
 use Illuminate\Http\Request;
 
 class UserTaskController extends Controller
@@ -12,7 +13,7 @@ class UserTaskController extends Controller
      */
     public function index()
     {
-        //
+        return User::all();
     }
 
     /**
