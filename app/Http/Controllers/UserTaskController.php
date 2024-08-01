@@ -13,7 +13,9 @@ class UserTaskController extends Controller
      */
     public function index()
     {
-        return User::all();
+        //return UserTask::all();
+      //return view("index");
+      //$data['tasks'] = UserTask::all();
     }
 
     /**
@@ -21,7 +23,10 @@ class UserTaskController extends Controller
      */
     public function create()
     {
-        return view('user_task');
+        //$data ['tasks'] = UserTask::all();
+        //return view('index', $data);
+        $data['tasks'] = $user = UserTask::paginate(25);
+        return view('index', $data);
     }
 
     /**
